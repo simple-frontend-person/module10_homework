@@ -3,7 +3,7 @@
 document.querySelector('.lesson-1').addEventListener('click', () => {
     const value = prompt('Введите значене', '');
 
-    if (typeof +value === 'number' && !isNaN(+elem))
+    if (typeof +value === 'number' && !isNaN(+value) && +value != 0)
         console.log(+value % 2 === 0 ? 'чётное' : 'нечётное')
     else
         console.log('Упс, кажется, вы ошиблись')
