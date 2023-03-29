@@ -12,8 +12,7 @@ const countNumInArray = (obj) => {
       : filterObj.length - even;
 
   console.log(
-    `Четных чисел в массиве - ${even}. Нечетных - ${odd}. ${
-      filterObj.indexOf(0) !== -1 ? "В массиве есть ноль" : "В массиве нет нуля"
+    `Четных чисел в массиве - ${even}. Нечетных - ${odd}. ${filterObj.indexOf(0) !== -1 ? "В массиве есть ноль" : "В массиве нет нуля"
     }`
   );
 };
@@ -22,15 +21,6 @@ document.querySelector(".lesson-1").addEventListener("click", () => {
   countNumInArray([2, "2", 3, 0, 1, 50, 2, undefined, NaN]);
 });
 
-/* document.querySelector('.lesson-1').addEventListener('click', () => {
-    const value = prompt('Введите значене', '');
-
-    if (typeof +value === 'number' && !isNaN(+value) && +value != 0)
-        console.log(+value % 2 === 0 ? 'чётное' : 'нечётное')
-    else
-        console.log('Упс, кажется, вы ошиблись')
-}) */
-
 /* Задание 2 */
 
 /* проверить '  ' */
@@ -38,7 +28,7 @@ const isPrime = (num) => {
   if (num > 1000 || typeof num !== "number" || isNaN(+num) || num < 0)
     return "Данные не верны";
 
-  for (var i = 2; i <= Math.sqrt(num); ) {
+  for (var i = 2; i <= Math.sqrt(num);) {
     if (num % i == 0) return "Не является простым числом";
     i == 2 ? i++ : (i += 2);
   }
@@ -74,14 +64,11 @@ document.querySelector(".lesson-4").addEventListener("click", () => {
 });
 
 /* Задание 5 */
+/* проверку на свякий */
+const exponentiateNumber = (x, n) => console.log(Math.pow(x, n));
 
 document.querySelector(".lesson-5").addEventListener("click", () => {
-  const obj = ["Первый", 2, true];
-
-  console.log(obj.length);
-  for (const elem of obj) {
-    console.log(elem);
-  }
+  exponentiateNumber(9, 2)
 });
 
 /* Задание 6 */
