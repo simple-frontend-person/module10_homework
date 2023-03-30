@@ -23,7 +23,6 @@ document.querySelector(".lesson-1").addEventListener("click", () => {
 
 /* Задание 2 */
 
-/* проверить '  ' */
 const isPrime = (num) => {
   if (num > 1000 || typeof num !== "number" || isNaN(+num) || num < 0)
     return "Данные не верны";
@@ -64,33 +63,8 @@ document.querySelector(".lesson-4").addEventListener("click", () => {
 });
 
 /* Задание 5 */
-/* проверку на свякий */
 const exponentiateNumber = (x, n) => console.log(Math.pow(x, n));
 
 document.querySelector(".lesson-5").addEventListener("click", () => {
   exponentiateNumber(9, 2)
-});
-
-/* Задание 6 */
-
-document.querySelector(".lesson-6").addEventListener("click", () => {
-  const obj = [2, "2"];
-
-  console.log(new Set(obj).size > 1 ? false : true);
-});
-
-/* Задание 7 */
-
-/* Задание 8 */
-
-document.querySelector(".lesson-8").addEventListener("click", () => {
-  const obj = new Map([
-    ["Первый", "test"],
-    [2, true],
-    ["3", "Последний"],
-  ]);
-
-  for (const [key, elem] of obj) {
-    console.log(`Ключ — ${key}, значение — ${elem}`);
-  }
 });
