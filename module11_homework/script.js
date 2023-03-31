@@ -51,9 +51,14 @@ document.querySelector(".lesson-3").addEventListener("click", () => {
 /* Задание 4 */
 
 const printNumber = (a, b) => {
-  setInterval(() => {
-    for (let i = a; i <= b; i++) {
-      console.log(i);
+  let index = 0;
+
+  const numInterval = setInterval(() => {
+    if(a + index <= b){
+      console.log(a + index)
+      index++;
+    } else {
+      clearInterval(numInterval)
     }
   }, 1000);
 };

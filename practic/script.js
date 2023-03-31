@@ -1,3 +1,4 @@
+/*  1. Операторы, значения, переменные */
 /* Задание 1 */
 
 document.querySelector(".lesson-1").addEventListener("click", () => {
@@ -74,3 +75,33 @@ document.querySelector(".lesson-5").addEventListener("click", () => {
   alert('Уплачено налогов на сумму ' + (ndflTax + otherTaxes) + ' рублей')
   alert('Осталось ' + totalAvailable + ' рублей')
 });
+
+/* 2. Условия */
+
+/* Задания 1 */
+
+document.querySelector('.lesson-6').addEventListener('click', () => {
+  const legA = prompt('Катет A', '');
+  const legB = prompt('Катет B', '');
+  const hypotenuseС = prompt('Гипотенуза C', '');
+
+  alert(Math.pow(+hypotenuseС, 2) === Math.pow(+legA, 2) + Math.pow(+legB, 2) ? 'Это прямоугольный треугольник!' : 'Это не прямоугольный треугольник!')
+})
+
+/* Задание 2 */
+
+document.querySelector('.lesson-7').addEventListener('click', () => {
+  const firstNum = prompt("Введите первое число", ""),
+    secondNum = prompt("Введите второе число", ""),
+    thirdNum = prompt("Введите третье число", "");
+
+  alert(Math.max(firstNum, secondNum, thirdNum))
+})
+
+/* Задание 3 */
+
+document.querySelector('.lesson-8').addEventListener('click', () => {
+  const num = prompt('Введите число', "");
+
+  alert(num % 2 === 0 ? `Число ${num} четное!` : `Число ${num} нечетное!`)
+})
